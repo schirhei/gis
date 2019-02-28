@@ -40,6 +40,7 @@ import { DataService } from './data.service';
 
 // }
 export class AppComponent implements OnInit {
+  title = 'GIS visualizer';
   geolocation$: Location[];
   dtOptions: DataTables.Settings = {};
 

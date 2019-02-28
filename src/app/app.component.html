@@ -1,7 +1,7 @@
 
 <h1>{{title}}</h1>
 <h1>------------------------------------------------</h1>
-<table datatable [dtOptions]="dtOptions" class="row-border hover">
+<table datatable [dtOptions]="dtOptions" class="row-border hover"   *ngFor="let geo of geolocation$">
   <thead>
     <tr>
       <th>ID</th>
@@ -14,7 +14,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let geo of geolocation$">
+    <tr>
       <td>{{ geo.id }} </td>
       <td>{{ geo.category}} </td>
       <td>{{geo.timestamp}}</td>
