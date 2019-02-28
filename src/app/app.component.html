@@ -1,0 +1,27 @@
+
+<h1 class="header">{{title}}</h1>
+<table datatable class="row-border hover" *ngFor="let geo of geos" class="table">
+  <thead class="padding">
+    <tr>
+      <th class="border_right">ID</th>
+      <th class="border_right">Category</th>
+      <th class="border_right">Timestamp</th>
+      <th class="border_right">Longitude</th>
+      <th class="border_right">Latitude</th>
+      <th class="border_right">Altitude</th>
+      <th>Radius</th>
+    </tr>
+  </thead>
+  <tbody class="padding">
+    <tr>
+      <td class="border_right">{{geo.id}}</td>
+      <td class="border_right">{{geo.category}}</td>
+      <td class="border_right">{{geo.timestamp}}</td>
+      <td class="border_right">{{geo.longitude}}</td>
+      <td class="border_right">{{geo.latitude}}</td>
+      <td class="border_right">{{geo.altitude}}</td>
+      <td class="border_right">{{geo.radius}}</td>
+    </tr>
+  </tbody>
+</table>
+
