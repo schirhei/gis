@@ -4,6 +4,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HttpModule } from '@angular/http';
+
 import { HttpClient } from 'selenium-webdriver/http';
 import { DataService } from './data.service';
 import { DataTablesModule } from 'angular-datatables';
@@ -14,6 +16,7 @@ import { DataTablesModule } from 'angular-datatables';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpModule,
     HttpClientModule,
     DataTablesModule
   ],

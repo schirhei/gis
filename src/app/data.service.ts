@@ -6,9 +6,9 @@ import { Location } from './geolocation.model';
   providedIn: 'root'
 })
 export class DataService {
-  apiUrl = "https://localhost:5001/api/todo";
-  constructor(private _http: HttpClient) { }
+  apiUrl = 'https://localhost:5001/api/todo';
+  constructor(private http: HttpClient) { }
   getUsers() {
-    return this._http.get<Location[]>(this.apiUrl);
+    return this.http.get<Location[]>(this.apiUrl);
   }
 }
