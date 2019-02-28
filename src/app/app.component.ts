@@ -13,12 +13,17 @@ export class AppComponent implements OnInit {
   private api = 'https://localhost:5001/api/todo';
   geos: any = {};
   heroes = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
+  dtOptions: DataTables.Settings = {};
 
   constructor(private http: HttpClient) {
   }
 
   ngOnInit() {
     this.getData().subscribe(geos => this.geos = geos);
+    this.dtOptions = {
+      pagingType: 'full_numbers',
+      pageLength: 10
+    };
   }
 
   getData() {
@@ -27,12 +32,6 @@ export class AppComponent implements OnInit {
     // let options = new RequestOptions({ headers: myHeaders })
     const response = this.http.get(this.api);
     return response;
-    // return this.http.get(this.api)
-    //   .subscribe(data => {
-    //     console.log(data, '!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!');
-    //     this.data = data;
-    //   });
-    // return this.http.get(this.api);
   }
 
 
