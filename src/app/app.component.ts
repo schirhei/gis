@@ -11,6 +11,31 @@ import { DataService } from './data.service';
   styleUrls: ['./app.component.css'],
 })
 
+export class AppComponent implements OnInit {
+  title = 'GIS visualizer';
+  geolocation$: Location[];
+  dtOptions: DataTables.Settings = {};
+
+  constructor(private dataService: DataService) {}
+
+  ngOnInit() {
+    this.dtOptions = {
+      pagingType: 'full_numbers',
+      pageLength: 12
+    };
+
+    return this.dataService.getUsers()
+    .subscribe(data => this.geolocation$ = data);
+  }
+}
+
+
+
+
+
+
+
+
 // export class AppComponent implements OnInit {
 //   title = 'GIS visualizer';
 //   private api = 'https://localhost:5001/api/todo';
@@ -39,20 +64,3 @@ import { DataService } from './data.service';
 
 
 // }
-export class AppComponent implements OnInit {
-  title = 'GIS visualizer';
-  geolocation$: Location[];
-  dtOptions: DataTables.Settings = {};
-
-  constructor(private dataService: DataService) {}
-
-  ngOnInit() {
-    this.dtOptions = {
-      pagingType: 'full_numbers',
-      pageLength: 10
-    };
-
-    return this.dataService.getUsers()
-    .subscribe(data => this.geolocation$ = data);
-  }
-}
