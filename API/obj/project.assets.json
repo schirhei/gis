@@ -12146,23 +12146,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dream\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/Ray_jung/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dream\\Documents\\seme4\\FULLYSTACKED\\gis-frontend\\gis\\API\\GIS_Task1.csproj",
+      "projectUniqueName": "/Users/Ray_Jung/Desktop/BCIT Fourth Term/Full-stack web/gis/API/GIS_Task1.csproj",
       "projectName": "GIS_Task1",
-      "projectPath": "C:\\Users\\dream\\Documents\\seme4\\FULLYSTACKED\\gis-frontend\\gis\\API\\GIS_Task1.csproj",
-      "packagesPath": "C:\\Users\\dream\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dream\\Documents\\seme4\\FULLYSTACKED\\gis-frontend\\gis\\API\\obj\\",
+      "projectPath": "/Users/Ray_Jung/Desktop/BCIT Fourth Term/Full-stack web/gis/API/GIS_Task1.csproj",
+      "packagesPath": "/Users/Ray_jung/.nuget/packages/",
+      "outputPath": "/Users/Ray_Jung/Desktop/BCIT Fourth Term/Full-stack web/gis/API/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\dream\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/Ray_jung/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"

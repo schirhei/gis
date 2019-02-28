@@ -1,5 +1,11 @@
 
-
+<h1>{{title}}</h1>
+<ul>
+  <li *ngFor="let geo of geos">
+    {{ geo.id }}
+  </li>
+</ul>
+<h1>------------------------------------------------</h1>
 <table datatable class="row-border hover">
   <thead>
     <tr>
