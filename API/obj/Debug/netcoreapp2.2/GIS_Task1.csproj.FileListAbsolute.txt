@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:/Users/travi/Desktop/3625/GIS_Task1/bin/Debug/netcoreapp2.2/GIS_Task1.deps.json
 C:/Users/travi/Desktop/3625/GIS_Task1/bin/Debug/netcoreapp2.2/GIS_Task1.runtimeconfig.json
 C:/Users/travi/Desktop/3625/GIS_Task1/bin/Debug/netcoreapp2.2/GIS_Task1.runtimeconfig.dev.json
@@ -54,3 +55,19 @@ C:/Users/dream/Documents/seme4/FULLYSTACKED/gis-frontend/gis/API/obj/Debug/netco
 /Users/Ray_Jung/Desktop/BCIT Fourth Term/Full-stack web/gis/API/obj/Debug/netcoreapp2.2/GIS_Task1.RazorTargetAssemblyInfo.cache
 /Users/Ray_Jung/Desktop/BCIT Fourth Term/Full-stack web/gis/API/obj/Debug/netcoreapp2.2/GIS_Task1.dll
 /Users/Ray_Jung/Desktop/BCIT Fourth Term/Full-stack web/gis/API/obj/Debug/netcoreapp2.2/GIS_Task1.pdb
+=======
+C:/Users/alexp/OneDrive/Desktop/Full_Stack/gis/API/bin/Debug/netcoreapp2.2/GIS_Task1.deps.json
+C:/Users/alexp/OneDrive/Desktop/Full_Stack/gis/API/bin/Debug/netcoreapp2.2/GIS_Task1.runtimeconfig.json
+C:/Users/alexp/OneDrive/Desktop/Full_Stack/gis/API/bin/Debug/netcoreapp2.2/GIS_Task1.runtimeconfig.dev.json
+C:/Users/alexp/OneDrive/Desktop/Full_Stack/gis/API/bin/Debug/netcoreapp2.2/GIS_Task1.dll
+C:/Users/alexp/OneDrive/Desktop/Full_Stack/gis/API/bin/Debug/netcoreapp2.2/GIS_Task1.pdb
+C:/Users/alexp/OneDrive/Desktop/Full_Stack/gis/API/obj/Debug/netcoreapp2.2/GIS_Task1.csprojAssemblyReference.cache
+C:/Users/alexp/OneDrive/Desktop/Full_Stack/gis/API/obj/Debug/netcoreapp2.2/GIS_Task1.csproj.CoreCompileInputs.cache
+C:/Users/alexp/OneDrive/Desktop/Full_Stack/gis/API/obj/Debug/netcoreapp2.2/GIS_Task1.RazorAssemblyInfo.cache
+C:/Users/alexp/OneDrive/Desktop/Full_Stack/gis/API/obj/Debug/netcoreapp2.2/GIS_Task1.RazorAssemblyInfo.cs
+C:/Users/alexp/OneDrive/Desktop/Full_Stack/gis/API/obj/Debug/netcoreapp2.2/GIS_Task1.AssemblyInfoInputs.cache
+C:/Users/alexp/OneDrive/Desktop/Full_Stack/gis/API/obj/Debug/netcoreapp2.2/GIS_Task1.AssemblyInfo.cs
+C:/Users/alexp/OneDrive/Desktop/Full_Stack/gis/API/obj/Debug/netcoreapp2.2/GIS_Task1.RazorTargetAssemblyInfo.cache
+C:/Users/alexp/OneDrive/Desktop/Full_Stack/gis/API/obj/Debug/netcoreapp2.2/GIS_Task1.dll
+C:/Users/alexp/OneDrive/Desktop/Full_Stack/gis/API/obj/Debug/netcoreapp2.2/GIS_Task1.pdb
+>>>>>>> a1fa6b599d1b945aa66eede1d31c439841c38a87
