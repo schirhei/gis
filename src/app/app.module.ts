@@ -9,16 +9,32 @@ import { HttpModule } from '@angular/http';
 import { HttpClient } from 'selenium-webdriver/http';
 import { DataService } from './data.service';
 import { DataTablesModule } from 'angular-datatables';
+import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule, MatCheckboxModule, MatInputModule, MatSelectModule, MatChipsModule, MatCardModule } from '@angular/material';
+import { GeolocationFormComponent } from './geolocationForm/geolocationForm.component';
+import { MatIconModule } from '@angular/material/icon';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GeolocationFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpModule,
     HttpClientModule,
-    DataTablesModule
+    DataTablesModule,
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatInputModule,
+    MatSelectModule,
+    MatChipsModule,
+    MatIconModule,
+    MatCardModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent]

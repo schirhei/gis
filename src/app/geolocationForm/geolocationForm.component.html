@@ -1,0 +1,50 @@
+<mat-card>
+  <div class="row justify-content-md-center">
+
+    <!-- <mat-icon svgIcon="map"></mat-icon> -->
+    <img src="assets/map.png" class="logo" />
+
+  </div>
+  <form [formGroup]="myForm">
+
+    <hr>
+    <div class="row justify-content-md-center">
+      <div class="col-md-2">
+        <mat-form-field>
+          <input matInput placeholder="Category" formControlName="category">
+        </mat-form-field>
+      </div>
+      <div class="col-md-2">
+        <mat-form-field>
+          <input matInput placeholder="Longitude" formControlName="longitude">
+        </mat-form-field>
+      </div>
+      <div class="col-md-2">
+        <mat-form-field>
+          <input matInput placeholder="Latitude" formControlName="latitude">
+        </mat-form-field>
+      </div>
+      <div class="col-md-2">
+        <mat-form-field>
+          <input matInput placeholder="Altitude" formControlName="altitude">
+        </mat-form-field>
+      </div>
+      <div class="col-md-2">
+        <mat-form-field>
+          <input matInput placeholder="Radius" formControlName="radius">
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="row justify-content-end">
+      <div class="col-md-2">
+        <button mat-raised-button color="primary">Add New Location</button>
+      </div>
+    </div>
+
+  </form>
+
+  <div class="row justify-content-md-center">
+      value: {{ myForm.value | json}}
+
+  </div>
+</mat-card>

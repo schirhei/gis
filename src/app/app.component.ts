@@ -4,7 +4,8 @@ import { map } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
 import { Location } from './geolocation.model';
 import { DataService } from './data.service';
-
+import { MatIconRegistry } from '@angular/material/icon';
+import { DomSanitizer } from '@angular/platform-browser';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -16,7 +17,16 @@ export class AppComponent implements OnInit {
   geolocation$: Location[];
   dtOptions: DataTables.Settings = {};
 
-  constructor(private dataService: DataService) {}
+  constructor(
+    private dataService: DataService,
+    private matIconRegistry: MatIconRegistry,
+    private domSanitizer: DomSanitizer
+    ) {
+    this.matIconRegistry.addSvgIcon(
+      `map`,
+      this.domSanitizer.bypassSecurityTrustResourceUrl('../assets/map.svg')
+    );
+  }
 
   ngOnInit() {
     this.dtOptions = {
