@@ -11,10 +11,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.EntityFrameworkCore;
-using TodoApi.Models;
+using GIS_API.Models;
 using System.Web.Http;
 
-namespace GIS_Task1
+namespace GIS_API
 {
     public class Startup
     {
@@ -40,8 +40,8 @@ namespace GIS_Task1
                 });
             });
 
-            services.AddDbContext<TodoContext>(opt =>
-                opt.UseInMemoryDatabase("TodoList"));
+            services.AddDbContext<GISContext>(opt =>
+                opt.UseInMemoryDatabase("GISList"));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
@@ -69,8 +69,7 @@ namespace GIS_Task1
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
-            app.UseCors(MyAllowSpecificOrigins);
-            app.UseCors(options => options.WithOrigins("http://localhost:4200"));
+
             app.UseHttpsRedirection();
             app.UseMvc();
         }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace GIS_Task1.Controllers
+namespace GIS_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
