@@ -22,7 +22,7 @@
   },
   "targets": {
     ".NETCoreApp,Version=v2.2": {
-      "GIS_Task1/1.0.0": {
+      "GIS_API/1.0.0": {
         "dependencies": {
           "Microsoft.AspNet.WebApi.Cors": "5.2.7",
           "Microsoft.AspNetCore.App": "2.2.0",
@@ -30,10 +30,10 @@
           "Microsoft.NETCore.App": "2.2.0"
         },
         "runtime": {
-          "GIS_Task1.dll": {}
+          "GIS_API.dll": {}
         },
         "compile": {
-          "GIS_Task1.dll": {}
+          "GIS_API.dll": {}
         }
       },
       "Microsoft.AspNet.Cors/5.2.7": {
@@ -3268,7 +3268,7 @@
     }
   },
   "libraries": {
-    "GIS_Task1/1.0.0": {
+    "GIS_API/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
