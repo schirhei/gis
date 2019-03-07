@@ -38,39 +38,3 @@ export class AppComponent implements OnInit {
     .subscribe(data => this.geolocation$ = data);
   }
 }
-
-
-
-
-
-
-
-
-// export class AppComponent implements OnInit {
-//   title = 'GIS visualizer';
-//   private api = 'https://localhost:5001/api/todo';
-//   geos: any = {};
-//   heroes = ['Windstorm', 'Bombasto', 'Magneta', 'Tornado'];
-//   dtOptions: DataTables.Settings = {};
-
-//   constructor(private http: HttpClient) {
-//   }
-
-//   ngOnInit() {
-//     this.getData().subscribe(geos => this.geos = geos);
-    // this.dtOptions = {
-    //   pagingType: 'full_numbers',
-    //   pageLength: 10
-    // };
-//   }
-
-//   getData() {
-//     // let myHeaders = new Headers();
-//     // myHeaders.append('Content-Type', 'application/json');
-//     // let options = new RequestOptions({ headers: myHeaders })
-//     const response = this.http.get(this.api);
-//     return response;
-//   }
-
-
-// }

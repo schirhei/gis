@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { HttpClient } from '@angular/common/http';
+import { Location } from '../geolocation.model';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-geolocation-form',
@@ -10,8 +13,12 @@ export class GeolocationFormComponent implements OnInit {
   title = 'Geolocation Form';
   myForm: FormGroup;
   currentTime: number = Date.now();
+  apiUrl = 'https://localhost:5001/api/todo';
 
-  constructor(private fb: FormBuilder) { }
+  constructor(
+    private fb: FormBuilder,
+    private http: HttpClient
+    ) { }
 
   ngOnInit() {
     this.myForm = this.fb.group({
@@ -20,10 +27,19 @@ export class GeolocationFormComponent implements OnInit {
       latitude: '',
       altitude: '',
       radius: '',
-      timestamp: this.currentTime
+      // timestamp: Date.now()
     });
 
-    this.myForm.valueChanges.subscribe(console.log);
+    this.myForm.valueChanges.subscribe(value => console.log(value));
+  }
+
+  onCreatePost() {
+    console.log(this.myForm.value);
+    this.http.post(this.apiUrl, this.myForm.value, {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }).subscribe(res => console.log(res));
   }
 
 }

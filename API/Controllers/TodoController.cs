@@ -52,7 +52,7 @@ namespace TodoApi.Controllers
         }
         // POST: api/Todo
         [Microsoft.AspNetCore.Mvc.HttpPostAttribute]
-        public async Task<ActionResult<TodoItem>> PostTodoItem(TodoItem item)
+        public async Task<ActionResult<TodoItem>> PostTodoItem([Microsoft.AspNetCore.Mvc.FromBodyAttribute]TodoItem item)
         {
             _context.TodoItems.Add(item);
             await _context.SaveChangesAsync();
