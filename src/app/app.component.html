@@ -1,9 +1,15 @@
-
 <h1 class="header">{{title}}</h1>
-<br/>
-<br/>
-<br/>
-<br/>
+<br />
+<br />
+
+<div class="container main-form">
+  <app-geolocation-form></app-geolocation-form>
+</div>
+
+
+<br />
+<br />
+
 
 <table datatable [dtOptions]="dtOptions" class="row-border hover" class="table">
   <thead class="padding">
@@ -17,7 +23,7 @@
       <th>Radius</th>
     </tr>
   </thead>
-  <tbody class="padding"  *ngFor="let geo of geolocation$">
+  <tbody class="padding" *ngFor="let geo of geolocation$">
     <tr>
       <td>{{ geo.id }} </td>
       <td>{{ geo.category}} </td>
