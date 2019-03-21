@@ -5,7 +5,7 @@ import { Location } from './geolocation.model';
 @Injectable({
   providedIn: 'root'
 })
-export class DataService {
+export class ApiService {
   apiUrl = 'https://localhost:5001/api/todo';
   constructor(private http: HttpClient) { }
   getUsers() {
