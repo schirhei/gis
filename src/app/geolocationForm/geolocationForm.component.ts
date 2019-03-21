@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Location } from '../geolocation.model';
 import { map } from 'rxjs/operators';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-geolocation-form',
@@ -17,7 +18,8 @@ export class GeolocationFormComponent implements OnInit {
 
   constructor(
     private fb: FormBuilder,
-    private http: HttpClient
+    private http: HttpClient,
+    private apiService: ApiService
     ) { }
 
   ngOnInit() {
@@ -40,6 +42,7 @@ export class GeolocationFormComponent implements OnInit {
         'Content-Type': 'application/json'
       }
     }).subscribe(res => console.log(res));
+    // this.apiService.getUsers()
   }
 
 }
