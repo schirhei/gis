@@ -4,8 +4,8 @@
     "windowsAuthentication": false, 
     "anonymousAuthentication": true, 
     "iisExpress": {
-      "applicationUrl": "http://localhost:62862",
-      "sslPort": 44367
+      "applicationUrl": "http://localhost:39940",
+      "sslPort": 44363
     }
   },
   "profiles": {
@@ -17,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "GIS_Task1": {
+    "GIS_API": {
       "commandName": "Project",
       "launchBrowser": true,
       "launchUrl": "api/values",

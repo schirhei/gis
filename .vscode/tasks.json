@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/API/GIS_Task1.csproj"
+                "${workspaceFolder}/API/GIS_API.csproj"
             ],
             "problemMatcher": "$msCompile"
         }

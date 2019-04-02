@@ -1,0 +1,29 @@
+.header {
+    height: auto;
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    border-color: black;
+    border-bottom: 1px solid;
+}
+
+.table {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.border_right {
+    border-color: black;
+    border-right: 1px solid;
+}
+
+.padding {
+    margin: 20px;
+}
+
+
+/* .main-form {
+    background-color: #ebedee 
+} */
